@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Face recognition project</title>
+    <link rel="stylesheet" href = "{{url_for('static',filename='main.css')}}"
+    
+</head>
+
+<body > 
+ 
+<center>
+<h1 style="color: white;">FACE RECOGNITION</h1>
+</center>
+<div class="row">
+        <div class = "left">
+          <h3 style="text-align: center;color:azure">ATTENDANCE IN</h3>
+          
+          <a href="#"><img src="{{url_for('static',filename='Images/attendance_in.jpg')}}" style="display:block; margin-left:auto;margin-right:auto;width:30%;padding-bottom:-2%;" > 
+          </a> 
+          <br><br>
+          
+        </div>
+        <div class="middle">
+          <h3 style="text-align: center;color:azure">CLICK FOR NEW REGISTRATON</h3>
+          
+          <a href="{{url_for('static',filename='register.html')}}"><img src="{{url_for('static',filename='Images/reg.jpg')}}" style="display:block; margin-left:auto;margin-right:auto;width:30%;" > 
+          </a>
+
+        </div>
+        <div class = "right">
+        <h3 style="text-align: center;color:azure ;padding-top:0px;">ATTENDANCE OUT</h3> 
+        <a href="#"><img src="{{url_for('static',filename='Images/attendance_out.png')}}" style="display:block; margin-left:auto;margin-right:auto;width:28%;" > 
+        </a>
+        <br><br>
+        
+      </div>
+</div>
+<div>
+       <div class="bt1" >
+        <form action="/sub" method="get">
+          <center>
+          <button type="submit" name="submit1" value="submit" class="submit">CLICK FOR ATTENDANCE IN</button>
+      </center>
+      </form>
+      </div>
+      <div  class="bt2">
+        <form action="/sub1" method="get">
+          <center>
+          <button type="submit" name="submit3" value="submit" class="submit">CLICK FOR ATTENDANCE OUT</button>
+      </center>
+      </form>
+
+      </div>
+</div>
+
+
+ 
+</body>
+</html>
